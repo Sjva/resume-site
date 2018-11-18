@@ -1,0 +1,292 @@
+@font-face {
+  font-family: Cera-Pro-Light;
+  src: url(../fonts/Cera-Pro-Light.otf);
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Cera-Pro-Medium;
+  src: url(../fonts/Cera-Pro-Medium.otf);
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Cera-Pro-Regular;
+  src: url(../fonts/Cera-Pro-Regular.otf);
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Cera-Pro-Bold;
+  src: url(../fonts/Cera-Pro-Bold.otf);
+  font-weight: normal;
+  font-style: normal; }
+html {
+  position: relative;
+  min-height: 100%; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0; }
+
+.container {
+  padding-left: 0;
+  padding-right: 0; }
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0; }
+
+a {
+  text-decoration: none;
+  border-color: transparent; }
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0; }
+
+a:active, a:focus {
+  outline: none; }
+
+input {
+  outline: 0 !important; }
+
+button:active, button:focus {
+  outline: none; }
+
+.form-control:focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none; }
+
+button::-moz-focus-inner {
+  border: 0; }
+
+input {
+  outline: none; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+  -webkit-text-fill-color: #303549 !important;
+  color: #303549 !important; }
+
+body {
+  font-family: Cera-Pro-Regular, sans-serif;
+  margin-bottom: 320px; }
+
+
+.wrapper {
+  min-width: 320px;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%; }
+
+
+
+footer{
+  position: absolute;
+  bottom: 0;
+  height: 320px;
+}
+/*--------------------------media-------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1199px) {
+  /*header-menu*/
+  .header-bg .menu-enter,
+  .header-menu .menu-enter {
+    margin-left: 1.1rem; }
+
+  .header-bg .navbar-expand-md .navbar-nav .nav-link,
+  .header-menu .navbar-expand-md .navbar-nav .nav-link {
+    padding: 0 1rem; }
+
+  .footer-form-question {
+    padding: 2rem 1rem; }
+
+  .footer-form-question h5 {
+    font-size: 13px; }
+
+  /*END footer*/ }
+@media screen and (max-width: 992px) {
+  /*header-menu*/
+  .header-menu-search .input-group {
+    width: 100%; }
+
+  .header-bg .menu-enter,
+  .header-menu .menu-enter {
+    padding: 1rem 0.4rem;
+    margin-left: 0; }
+
+  .header-reg .btn {
+    padding: 5px 10px 10px; }
+
+  .header-bg .navbar-expand-md .navbar-nav .nav-link,
+  .header-menu .navbar-expand-md .navbar-nav .nav-link {
+    padding: 0 0.6rem;
+    font-size: 14px; }
+
+  .header-menu-tel a, .header-menu-email a {
+    font-size: 13px;
+    margin-left: 0; }
+
+  .cofe-img {
+    display: none; }
+
+  /*footer*/
+  .footer-form-question form input {
+    padding: 0.5rem 0.3rem 0.1rem;
+    font-size: 11px; }
+
+  .footer-form-question form button {
+    padding: 0 1.8rem;
+    font-size: 12px; }
+
+  footer ul li a {
+    font-size: 11px; }
+
+  /*END footer*/
+  .paid-data-news p {
+    margin: 0.3rem 0.5rem; } }
+@media screen and (max-width: 768px) {
+  body {
+    margin-bottom: 816px; }
+
+  .navbar-light .navbar-toggler {
+    border-color: transparent; }
+
+  .navbar-collapse {
+    text-align: center; }
+
+  .header-bg .menu-enter,
+  .header-menu .menu-enter {
+    padding: 1rem 2.4rem;
+    margin-bottom: 1rem; }
+
+  .platform {
+    padding: 2rem 0 0; }
+
+  .platform ul {
+    list-style: none;
+    margin: 0.7rem 0; }
+
+  .invest-blocks {
+    margin: 2rem 0; }
+
+  /*footer*/
+  footer {
+    height: 816px;
+    padding-bottom: 0; }
+
+  .footer {
+    padding-left: 1rem; }
+
+  .footer-form-question {
+    margin-bottom: 1rem; }
+
+  .footer-menu ul li {
+    padding: 1rem 1rem; }
+
+  footer ul li a {
+    font-size: 14px; }
+
+  .vip-invoice img {
+    margin: 0; }
+
+  .consultation .select2-container .select2-selection--single {
+    width: 290px !important; }
+
+  .select2-container--open .select2-dropdown--below {
+    width: 290px !important; }
+
+  .consultation .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: -10px; }
+
+  .rec-consul .header-menu-slogan .form-control {
+    width: 290px !important; }
+
+  .trader-advice .vip-offer-btn {
+    margin: 3rem 0 2rem; }
+
+  .trader .vip-invoice {
+    text-align: center; }
+
+  .trader-advice-consul .trader-advice-type {
+    text-align: center;
+    margin: 1rem 0; } }
+@media screen and (max-width: 600px) {
+  .header-reg .btn {
+    margin-bottom: 0.5rem; }
+
+  .header-menu-email {
+    margin: 1.5rem 0; }
+
+  .invest {
+    padding: 2rem 1rem; }
+
+  .platform {
+    padding: 2rem 1rem;
+    text-align: center; } }
+@media screen and (max-width: 565px) {
+  .header-menu-search .input-group {
+    margin-top: 1rem; }
+
+  .header-bg .header-menu-slogan {
+    margin: 2rem 1rem; }
+
+  .header-bg .header-menu-slogan form .form-control {
+    width: 100%; }
+
+  .rec-consul .header-menu-slogan .form-control {
+    width: 290px !important; }
+
+  .social-networks {
+    flex-wrap: wrap;
+    margin: 2rem 0; }
+
+  .social-networks ul li {
+    padding: 2rem 1rem 0; }
+
+  .social-networks a {
+    margin-left: 1rem; }
+
+  .paid h1 {
+    font-size: 2.2rem; }
+
+  .paid-data ul .paid-data-news {
+    display: block; }
+
+  .vip-invoice h1, .paid h1 {
+    font-size: 2.2rem; }
+
+  .trader-advice h2, .vip-offer h2 {
+    font-size: 1.5rem; }
+
+  .trader-advice {
+    text-align: center; } }
+@media screen and (max-width: 500px) {
+  .header-menu-slogan a {
+    display: inline-block; }
+
+  .header-menu-slogan-bt2 {
+    margin: 1rem 0; }
+
+  .invest-terminal-load a img {
+    float: left; }
+
+  .invest-terminal-load .invest-terminal-load--instructin {
+    margin-bottom: 3rem; } }
+@media screen and (max-width: 400px) {
+  .invest h1,
+  .platform h1,
+  .invest-now h1,
+  .header-menu-slogan h1 span {
+    font-size: 2rem;
+    text-align: center; }
+
+  .header-menu-slogan h1 {
+    font-family: Cera-Pro-Light, sans-serif;
+    line-height: 2rem;
+    font-size: 1.5rem; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+/.idea
+/.git
+.idea
+.git
+dist
+node_modules
+.idea/workspace.xml

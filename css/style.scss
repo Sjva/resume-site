@@ -105,11 +105,8 @@ body {
   background: #fff;
 }
 .name{
-  //display: flex;
-  //justify-content: flex-start;
-  //align-items: center;
   background: #2d2e2e;
-  padding: 7rem 0 0 5rem;
+  padding: 7rem 0 3rem 5rem;
 }
 .name h1{
   font-size: 3.8rem;
@@ -143,6 +140,27 @@ body {
 .social-icons svg:hover{
   fill: #e0a80d;
 }
+.name hr{
+  background: #404242;
+  margin-top: 10rem;
+}
+.name ul li {
+  font-family: Cera-Pro-Medium, sans-serif;
+  list-style: none;
+  color: #979899;
+  padding-right:10rem ;
+}
+.name ul li p a,
+.name ul li p{
+  font-family: Cera-Pro-Light, sans-serif;
+  margin: 1rem 0;
+  color: #979899;
+  text-decoration: none;
+}
+.name ul li p a:hover{
+  color: #e0a80d;
+}
+
 /*------------END header--------*/
 
 

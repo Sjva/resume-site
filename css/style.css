@@ -87,10 +87,10 @@ body {
 /*------------header--------*/
 .my-photo {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  /* align-items: center; */
   background: #2b2c2c;
-  padding: 5rem 0; }
+  padding: 6rem 7rem 0 0; }
 
 .my-photo img {
   width: 14rem;
@@ -126,16 +126,17 @@ body {
 
 .social-icons svg {
   fill: #979899;
-  width: 2.3rem;
-  height: 2.3rem;
-  margin: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem 0.2rem;
   border-radius: 3px; }
 
 .social-icons svg:hover {
   fill: #e0a80d; }
 
-.name hr {
-  background: #404242;
+.name .d-flex {
+  border-top: 1px solid  #404242;
+  padding: 1rem 0;
   margin-top: 10rem; }
 
 .name ul li {
@@ -155,6 +156,64 @@ body {
   color: #e0a80d; }
 
 /*------------END header--------*/
+/*------------main--------*/
+/*------------intro--------*/
+.expertise-title,
+.intro-title {
+  background: #292a2a;
+  color: #979899;
+  padding: 4rem 5rem;
+  text-align: right; }
+
+.expertise-title h3, .expertise-text h3,
+.intro-title h3 {
+  font-family: Cera-Pro-Medium, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.expertise-title p,
+.intro-title p {
+  font-size: 14px;
+  margin: 1rem 0; }
+
+.expertise-text,
+.intro-text {
+  font-family: Cera-Pro-Light, sans-serif;
+  background: #2b2c2a;
+  color: #979899;
+  padding: 4rem 5rem;
+  text-align: left;
+  line-height: 24px; }
+
+.expertise-text p,
+.intro-text p {
+  margin-bottom: 1rem;
+  font-size: 17px; }
+
+/*------------end intro--------*/
+/*------------expertise--------*/
+.expertise-title {
+  background: #2b2c2c; }
+
+.expertise-text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #2d2e2e; }
+
+.expertise-text div {
+  width: 45%;
+  margin: 0 2rem 2rem 0; }
+
+.expertise-text h3 span {
+  color: #e0a80d;
+  margin: 0 0.8rem 0 -1rem; }
+
+.expertise-text div p {
+  font-size: 14px; }
+
+/*------------end expertise--------*/
+/*------------END main -------*/
 footer {
   position: absolute;
   font-family: BlissPro-Regular, sans-serif;
@@ -165,5 +224,11 @@ footer {
   padding: 2rem 0; }
 
 /*--------------------------media-------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1440px) {
+  .prof-name h3 {
+    margin: 1rem 14rem 1rem 0; }
+
+  .name ul li {
+    padding-right: 5rem; } }
 
 /*# sourceMappingURL=style.css.map */

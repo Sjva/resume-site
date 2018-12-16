@@ -1,3 +1,33 @@
+//при загрузке
+var width = 1;
+
+window.onscroll = function(e) {
+    if ($(window).scrollTop() + $(window).height() >= $('#progress__bar-line').offset().top) {
+        if(!$('#progress__bar-line').attr('loaded')) {
+            e = window.pageYOffset;
+            if (e >= 100) {
+                move();
+            }
+
+            function move() {
+                var pBar_line = document.getElementById('progress__bar-line');
+
+                var interval = setInterval(frame, 1);
+                console.log(width);
+                function frame() {
+                    if (width >= 73) {
+                        clearInterval(interval);
+                    } else {
+                        width++;
+                        pBar_line.style.width = width + '%';
+                        document.getElementById('label').innerHTML = width * 1 + '%';
+                    }
+                }
+            }
+            $('#progress__bar-line').attr('loaded', true);
+        }
+    }
+};
 
 
 
@@ -10,50 +40,5 @@ $('a[href*="#"]').click(function() {
     }, 1000);
     return false;
 });
-
-
-
-
-    var bar = new ProgressBar.Line(container, {
-        strokeWidth: 4,
-        easing: 'easeInOut',
-        duration: 1400,
-        color: '#e0a80d',
-        trailColor: '#eee',
-        trailWidth: 1,
-        svgStyle: {width: '100%', height: '100%'},
-        from: {color: '#e0a80d'},
-        to: {color: '#e0a80d'},
-        step: (state, bar) => {
-            bar.path.setAttribute('stroke', state.color);
-        }
-    });
-
-    // Функция, которая
-    var visible = function(e) {
-        var elementTop = window.pageYOffset + e.getBoundingClientRect().top, // Получаем координаты верхней части элементы
-            windowBottom = window.pageYOffset + document.documentElement.clientHeight; // Получаем положение нижней части окна
-
-        // Если положение нижней части окна больше чем верхняя координата элемента, то мы долистали до элемента
-        // Так же проверим, не запущена ли уже анимация, а то выйдет казус в виде всё время запускающееся анимации
-        if(elementTop < windowBottom && Number(e.dataset.animationState) === 0){
-            bar.animate(1.0); // Number from 0.0 to 1.0
-
-            e.dataset.animationState = 1; // Отмечаем, что анимация запущена
-        };
-    };
-
-    // Получаем нужный элемент
-    var element = document.querySelector('#container');
-
-    // Запускаем функцию
-    // Запускаем при скролле
-    window.addEventListener('scroll', function() {
-        visible(element);
-    });
-
-    // И сразу при загрузке страницы. Вдруг элемент уже находится в видимой области
-    visible(element);
-
 
 

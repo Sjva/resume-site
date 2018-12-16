@@ -214,10 +214,38 @@ body {
 
 /*------------end expertise--------*/
 /*------------skills--------*/
-#container {
-  margin: 20px;
-  width: 400px;
-  height: 8px; }
+.skills-text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.8rem 5rem 4rem; }
+
+.skills-text #label {
+  display: inline-block;
+  font-family: Cera-Pro-Medium, sans-serif;
+  color: #e0a80d;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 2rem 1rem 0.3rem 0; }
+
+.skills-text span {
+  font-family: Cera-Pro-Medium, sans-serif;
+  color: #979899;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0 1rem 1rem 0; }
+
+#progress__bar {
+  width: 350px;
+  position: relative;
+  height: 5px;
+  background: #404242; }
+
+#progress__bar-line {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background: #e0a80d; }
 
 /*------------end skills--------*/
 /*------------END main -------*/

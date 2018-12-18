@@ -158,25 +158,26 @@ body {
 /*------------END header--------*/
 /*------------main--------*/
 /*------------intro--------*/
-.expertise-title, .skills-title,
+.expertise-title, .skills-title, .experiens-title, .education-title, .certificate-title, .portfolio-title,
 .intro-title {
   background: #292a2a;
   color: #979899;
   padding: 4rem 5rem;
   text-align: right; }
 
-.expertise-title h3, .expertise-text h3, .skills-title h3,
+.expertise-title h3, .expertise-text h3, .skills-title h3, .certificate-title h3, .portfolio-title h3,
+.experiens-title h3, .experiens-text ul li h3, .education-text ul li h3, .education-title h3, .certificate-text h3,
 .intro-title h3 {
   font-family: Cera-Pro-Medium, sans-serif;
   font-size: 18px;
   text-transform: uppercase; }
 
-.expertise-title p, .skills-title p,
+.expertise-title p, .skills-title p, .experiens-title p, .education-title p, .certificate-title p, .portfolio-title p,
 .intro-title p {
   font-size: 14px;
   margin: 1rem 0; }
 
-.expertise-text, .skills-text,
+.expertise-text, .skills-text, .experiens-text, .education-text, .certificate-text, .portfolio-text,
 .intro-text {
   font-family: Cera-Pro-Light, sans-serif;
   background: #2b2c2a;
@@ -185,7 +186,7 @@ body {
   text-align: left;
   line-height: 24px; }
 
-.expertise-text p,
+.expertise-text p, .experiens-text p, .education-text p, .certificate-text p, .portfolio-text p,
 .intro-text p {
   margin-bottom: 1rem;
   font-size: 17px; }
@@ -253,6 +254,113 @@ body {
   background: #e0a80d; }
 
 /*------------end skills--------*/
+/*------------experiens--------*/
+.experiens-title {
+  background: #2b2c2c; }
+
+.experiens-text {
+  background: #2d2e2e;
+  padding: 4rem 5rem 0; }
+
+.education-text ul li,
+.experiens-text ul li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 2rem 0;
+  line-height: 22px;
+  border-left: 2px solid #404242; }
+
+.education-text ul li span,
+.education-text ul li time,
+.experiens-text ul li span,
+.experiens-text ul li time {
+  font-size: 0.7rem;
+  color: #979899; }
+
+.education-text ul li h6,
+.experiens-text ul li h6 {
+  font-family: Cera-Pro-Medium, sans-serif;
+  font-size: 0.8rem;
+  color: #a4a5a6; }
+
+.education-text ul li p,
+.experiens-text ul li p {
+  font-size: 0.9rem;
+  color: #979899;
+  margin-left: 2rem;
+  width: 60%; }
+
+.education-text .timeline-point,
+.experiens-text .timeline-point {
+  height: 10px;
+  width: 10px;
+  position: relative;
+  left: -6px;
+  top: 9px;
+  background: #e0a80d;
+  border-radius: 50%;
+  box-shadow: 0 0 0 9px #2d2e2e; }
+
+/*------------end experiens--------*/
+/*------------education--------*/
+.education-title {
+  background: #292a2a; }
+
+.education-text {
+  background: #2b2c2a;
+  padding: 0 5rem 4rem; }
+
+.education-text .timeline-point {
+  box-shadow: 0 0 0 9px #2b2c2a; }
+
+.education-text ul .education-last {
+  padding-top: 4rem; }
+
+.education-text ul li:last-child {
+  border: none; }
+
+/*------------end education-------*/
+/*------------certificate-------*/
+.certificate-title {
+  background: #2b2c2c; }
+
+.certificate-text div {
+  width: 40%;
+  margin-right: 2rem; }
+
+.certificate-text {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  background: #2d2e2e; }
+
+.certificate-text hr {
+  border-top: 5px solid #e0a80d;
+  width: 35%; }
+
+.certificate-text div p {
+  font-size: 0.9rem;
+  color: #979899; }
+
+/*------------end certificate-------*/
+/*------------portfolio-------*/
+.portfolio-text {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap; }
+
+.portfolio-text a {
+  display: block;
+  width: 20rem;
+  margin: 0 2rem 1.8rem 0; }
+
+.portfolio-text img {
+  width: 100%;
+  padding: 0; }
+
+/*------------end portfolio-text-------*/
 /*------------END main -------*/
 footer {
   position: absolute;

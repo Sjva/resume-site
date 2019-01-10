@@ -200,12 +200,12 @@ body {
 
 .expertise-text {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   flex-wrap: wrap;
   background: #2d2e2e; }
 
 .expertise-text div {
-  width: 45%;
+  width: 300px;
   margin: 0 2rem 2rem 0; }
 
 .expertise-text h3 span {
@@ -267,7 +267,7 @@ body {
 .education-text ul li,
 .experiens-text ul li {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   flex-wrap: wrap;
   list-style: none;
   padding: 0 0 2rem 0;
@@ -304,6 +304,10 @@ body {
   background: #e0a80d;
   border-radius: 50%;
   box-shadow: 0 0 0 9px #2d2e2e; }
+
+.experiens-time {
+  width: 300px;
+  margin: 0 0 0 1rem; }
 
 /*------------end experiens--------*/
 /*------------education--------*/
@@ -418,7 +422,8 @@ body {
   color: #e0a80d; }
 
 .contact-text ul li h6 {
-  font-family: Cera-Pro-Medium, sans-serif; }
+  font-family: Cera-Pro-Medium, sans-serif;
+  margin-right: 0.5rem; }
 
 .contact-text hr {
   border-top: 2px solid #404242;

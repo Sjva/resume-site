@@ -246,7 +246,6 @@ window.onscroll = function(e) {
                 var interval = setInterval(frame, 1);
 
                 function frame() {
-                    console.log(widthGit);
                     if (widthGit >= 70) {
                         clearInterval(interval);
                     } else {

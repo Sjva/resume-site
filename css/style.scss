@@ -489,14 +489,59 @@ background: #2b2c2c;
 
 }
 @media screen and (max-width: 1199px) {
-
+  .my-photo {
+    padding: 6rem 2rem 0 0;
+  }
 
 }
 @media screen and (max-width: 992px) {
+  .name .d-flex {
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  .name ul li p a, .name ul li p {
+    margin: 0.5rem 0 1rem;
+  }
+
 
 }
 @media screen and (max-width: 768px) {
-
+  .my-photo {
+    padding: 2rem 2rem 1rem 0;
+    justify-content: center;
+  }
+  .name {
+    padding: 1rem 0 0 0;
+  }
+  .name-content{
+   text-align: center;
+  }
+  .name .d-flex {
+    text-align: center;
+    flex-direction: column;
+  }
+  .name ul li {
+    padding-right: 0;
+  }
+  .prof-name h3 {
+    margin: 1rem 0 1rem 0;
+  }
+  .prof-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .expertise-title, .skills-title, .experiens-title, .education-title, .certificate-title, .portfolio-title, .contact-title, .intro-title {
+    padding: 1rem 1rem 0;
+    text-align: center;
+  }
+  .expertise-text, .skills-text, .experiens-text, .education-text, .certificate-text, .portfolio-text, .contact-text, .intro-text {
+    padding: 1rem 2rem;
+    text-align: left;
+  }
+  .skills-text {
+    padding: 0 1rem 3rem;
+  }
 
 }
 

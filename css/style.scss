@@ -476,7 +476,19 @@ background: #2b2c2c;
 
 /*------------END main -------*/
 
-
+/*------------Preloader -------*/
+#hellopreloader>p{display:none;}
+#hellopreloader_preload{
+  display: block;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  background: #2b2c2c url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;background-size:69px;}
+/*------------END Preloader -------*/
 
 /*--------------------------media-------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1440px) {
@@ -502,12 +514,14 @@ background: #2b2c2c;
   .name ul li p a, .name ul li p {
     margin: 0.5rem 0 1rem;
   }
-
+  .contact-text .d-flex {
+    flex-direction: column;
+  }
 
 }
 @media screen and (max-width: 768px) {
   .my-photo {
-    padding: 2rem 2rem 1rem 0;
+    padding: 2rem 0 1rem 0;
     justify-content: center;
   }
   .name {
@@ -535,12 +549,22 @@ background: #2b2c2c;
     padding: 1rem 1rem 0;
     text-align: center;
   }
-  .expertise-text, .skills-text, .experiens-text, .education-text, .certificate-text, .portfolio-text, .contact-text, .intro-text {
+  .expertise-text, .skills-text, .certificate-text, .portfolio-text, .contact-text, .intro-text {
     padding: 1rem 2rem;
     text-align: left;
   }
+  .experiens-text, .education-text{
+    padding: 0 1rem 0 1.5rem;
+  }
   .skills-text {
     padding: 0 1rem 3rem;
+  }
+  .certificate-text, .skills-text, .expertise-text, .footer-social,
+  .portfolio-text {
+    justify-content: center;
+  }
+  .contact-text .d-flex {
+    align-items: center;
   }
 
 }
@@ -550,13 +574,39 @@ background: #2b2c2c;
 }
 
 @media screen and (max-width: 565px) {
+  .expertise-text, .skills-text, .certificate-text, .portfolio-text, .contact-text, .intro-text {
+    padding: 1rem;
+  }
+  .education-text ul li p, .experiens-text ul li p {
+    margin-left: 1rem;
+    width: 100%;
+  }
+
+  .expertise-text{
+    padding-left: 2rem;
+  }
+  .portfolio-images {
+    margin: 0 0 1.8rem 0;
+  }
+  .contact-text hr {
+    margin-bottom: 2rem;
+  }
+  .footer-social h1 {
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+
+
 
 }
 @media screen and (max-width: 500px) {
 
 }
 @media screen and (max-width: 400px) {
-
+  .progress__bar {
+    width: 290px;}
+  .portfolio-images {
+    width: 100%;}
 
 }
 

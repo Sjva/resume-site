@@ -102,7 +102,21 @@ body {
 }
 .name{
   background: #2d2e2e;
-  padding: 7rem 0 3rem 5rem;
+  padding:0 0 3rem 5rem;
+}
+.name .lang-btn {
+  position: relative;
+  text-decoration: none;
+  color: #979899;
+  font-size: 1rem;
+  padding: 0.1rem 0.8rem;
+  text-transform: uppercase;
+  background: #2b2c2a;
+  margin-bottom: 6rem;
+  left: 85%;
+}
+.name .lang-btn:hover{
+  color: #e0a80d;
 }
 .footer-social h1,
 .name h1{
@@ -400,13 +414,12 @@ background: #2b2c2c;
   -webkit-transition: all 1s ease-out;
 }
 .portfolio-images img:hover{
-
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
 .portfolio-images .portfolio-hover{
-
+  font-family: Cera-Pro-Medium, sans-serif;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -422,9 +435,19 @@ background: #2b2c2c;
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
+.portfolio-images .portfolio-hover hr{
+  width: 4rem;
+  height: 0.2rem;
+  background:  #e0a80d;
+  transition: all ease 1s;
+}
+
 .portfolio-images:hover .portfolio-hover{
   opacity: 1;
   background: rgba(0, 0, 0, 0.4);
+}
+.portfolio-images:hover .portfolio-hover hr{
+ width: 8rem;
 }
 /*------------end portfolio-text-------*/
 

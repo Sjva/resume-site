@@ -1,3 +1,7 @@
+// animation init
+new WOW().init();
+
+
 //при загрузке
 var widthHtml = 1;
 var widthCss = 1;
@@ -293,3 +297,9 @@ window.onload = function(){
         fadeOutnojquery(hellopreloader);
     },1000);
 };
+
+
+// $(window).load(function() {
+//     $(".cube-loader").delay(100).fadeOut().remove();
+//
+// });

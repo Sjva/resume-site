@@ -307,9 +307,7 @@ background: #2b2c2c;
   border-left: 2px solid #404242;
 }
 .education-text ul li span,
-.education-text ul li time,
-.experiens-text ul li span,
-.experiens-text ul li time{
+.experiens-text ul li span{
   font-size: 0.7rem;
   color:#979899;
 }
@@ -367,10 +365,6 @@ background: #2b2c2c;
 .certificate-title{
   background: #2b2c2c;
 }
-//.certificate-text div{
-//  width: 40%;
-//  margin-right: 2rem;
-//}
 .certificate-text .portfolio-images {
   height: 14rem;
   margin-top: 1rem;
@@ -382,6 +376,7 @@ background: #2b2c2c;
   background: #2d2e2e;
 }
 .certificate-text hr {
+  display: inline-block;
   border-top: 5px solid #e0a80d;
   width:35%;
 }

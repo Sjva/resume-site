@@ -289,9 +289,7 @@ body {
   border-left: 2px solid #404242; }
 
 .education-text ul li span,
-.education-text ul li time,
-.experiens-text ul li span,
-.experiens-text ul li time {
+.experiens-text ul li span {
   font-size: 0.7rem;
   color: #979899; }
 
@@ -358,6 +356,7 @@ body {
   background: #2d2e2e; }
 
 .certificate-text hr {
+  display: inline-block;
   border-top: 5px solid #e0a80d;
   width: 35%; }
 

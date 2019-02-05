@@ -527,7 +527,9 @@ background: #2b2c2c;
   min-width: 1000px;
   background: #2b2c2c url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;background-size:69px;}
 /*------------END Preloader -------*/
-
+.cbalink{
+  display: none !important;
+}
 /*--------------------------media-------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1440px) {
   .prof-name h3 {
@@ -561,6 +563,10 @@ background: #2b2c2c;
   .my-photo {
     padding: 2rem 0 1rem 0;
     justify-content: center;
+  }
+  .name .lang-btn {
+    margin-bottom: 2rem;
+    left: 44%;
   }
   .name {
     padding: 1rem 0 0 0;
@@ -600,6 +606,9 @@ background: #2b2c2c;
   .certificate-text, .skills-text, .expertise-text, .footer-social,
   .portfolio-text {
     justify-content: center;
+  }
+  .portfolio-images a img{
+    width: 100%;
   }
   .contact-text .d-flex {
     align-items: center;

@@ -165,7 +165,7 @@ body {
   font-family: Cera-Pro-Medium, sans-serif;
   list-style: none;
   color: #979899;
-  padding-right:10rem ;
+  padding-right:7rem ;
 }
 .name ul li p a,
 .name ul li p{
@@ -298,7 +298,7 @@ background: #2b2c2c;
 }
 .education-text ul li,
 .experiens-text ul li{
-  display: flex;
+  display: block;
   justify-content: left;
   flex-wrap: wrap;
   list-style: none;
@@ -650,6 +650,8 @@ background: #2b2c2c;
 
 }
 @media screen and (max-width: 400px) {
+  .effect {
+    width: 100%;}
   .progress__bar {
     width: 290px;}
   .portfolio-images {

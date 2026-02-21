@@ -270,7 +270,7 @@ window.onscroll = function(e) {
 // };
 
 
-// дл плавной прокруттки страницы по якорю
+// smoothie scroll on click
 
 let $page = $('html, body');
 $('a[href*="#"]').click(function() {
@@ -280,23 +280,23 @@ $('a[href*="#"]').click(function() {
     return false;
 });
 
-// PRELOADER
-var hellopreloader = document.getElementById("hellopreloader_preload");
-function fadeOutnojquery(el){
-    el.style.opacity = 1;
-    var interhellopreloader = setInterval(function(){
-        el.style.opacity = el.style.opacity - 0.05;
-        if (el.style.opacity <=0.05){
-            clearInterval(interhellopreloader);
-            hellopreloader.style.display = "none";
-        }
-    }, 16);
-}
-window.onload = function(){
-    setTimeout(function(){
-        fadeOutnojquery(hellopreloader);
-    },1000);
-};
+// // PRELOADER
+// var hellopreloader = document.getElementById("hellopreloader_preload");
+// function fadeOutnojquery(el){
+//     el.style.opacity = 1;
+//     var interhellopreloader = setInterval(function(){
+//         el.style.opacity = el.style.opacity - 0.05;
+//         if (el.style.opacity <=0.05){
+//             clearInterval(interhellopreloader);
+//             hellopreloader.style.display = "none";
+//         }
+//     }, 16);
+// }
+// window.onload = function(){
+//     setTimeout(function(){
+//         fadeOutnojquery(hellopreloader);
+//     },1000);
+// };
 
 
 // $(window).load(function() {

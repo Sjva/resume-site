@@ -1,4 +1,5 @@
-User-agent: 
+User-agent: *
 Disallow: 
-Host: viacheslav-levko.zzz.com.ua
-Sitemap: http://viacheslav-levko.zzz.com.ua/sitemap.xml
+
+Host: sjva.github.io
+Sitemap: https://sjva.github.io/resume-site/sitemap.xml

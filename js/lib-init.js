@@ -176,7 +176,7 @@ window.onscroll = function(e) {
                 var interval = setInterval(frame, 1);
 
                 function frame() {
-                    if (widthJs >= 30) {
+                    if (widthJs >= 50) {
                         clearInterval(interval);
                     } else {
                         widthJs++;
@@ -201,7 +201,7 @@ window.onscroll = function(e) {
                 var interval = setInterval(frame, 1);
 
                 function frame() {
-                    if (widthJquery >= 40) {
+                    if (widthJquery >= 60) {
                         clearInterval(interval);
                     } else {
                         widthJquery++;
@@ -226,7 +226,7 @@ window.onscroll = function(e) {
                 var interval = setInterval(frame, 1);
 
                 function frame() {
-                    if (widthVue >= 30) {
+                    if (widthVue >= 40) {
                         clearInterval(interval);
                     } else {
                         widthVue++;
